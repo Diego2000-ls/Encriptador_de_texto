@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptación de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Encriptación de texto</h1>
+    <form id="formulario">
+        <label for="texto">Texto a encriptar/desencriptar:</label>
+        <br>
+        <textarea id="texto" name="texto" rows="5" cols="50"></textarea>
+        <br>
+        <br>
+        <input type="radio" name="accion" value="encriptar" id="encriptar" checked>
+        <label for="encriptar">Encriptar</label>
+        <br>
+        <input type="radio" name="accion" value="desencriptar" id="desencriptar">
+        <label for="desencriptar">Desencriptar</label>
+        <br>
+        <br>
+        <button type="submit">Procesar</button>
+        <br>
+        <br>
+        <label for="resultado">Resultado:</label>
+        <br>
+        <textarea id="resultado" name="resultado" rows="5" cols="50"></textarea>
+        <br>
+        <br>
+        <button type="button" id="copiar">Copiar</button>
+    </form>
+    <br>
+    <br>
+    <footer>
+        <p>Desarrollado por: [Diego Antonio Lopez Sagastume]</p>
+        <p>Contacto: [dlopezantony9@gmail.com]</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

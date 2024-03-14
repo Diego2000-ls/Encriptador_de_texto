@@ -1,0 +1,113 @@
+:root {
+    --color-fondo: #1f2833;
+    --color-texto: #f5f5f5;
+    --color-primario: #ff4747;
+    --color-secundario: #ff7f50;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 24px;
+    margin-top: 20px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#formulario {
+    border: 1px solid var(--color-primario);
+    padding: 20px;
+    background-color: var(--color-fondo);
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, var(--color-fondo), #2b3848);
+}
+
+#texto,
+#resultado {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-fondo);
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Roboto Mono", monospace;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, var(--color-fondo), #2b3848);
+}
+
+#copiar {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, var(--color-primario), #ff7f50);
+}
+
+#copiar:hover {
+    background-color: var(--color-secundario);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #formulario,
+    #texto,
+    #resultado,
+    #copiar {
+        width: 100%;
+    }
+}
+
+
+
+#copiar:active {
+    transform: scale(0.95);
+}
+
+.efecto-resplandor {
+    animation: resplandor 1s infinite;
+}
+
+@keyframes resplandor {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+
+.borde-resplandor {
+    border: 1px solid #ff4747;
+    border-radius: 5px;
+    padding: 5px
+}
+
+footer {
+    text-align: right;
+    color: black;
+}
